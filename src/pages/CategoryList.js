@@ -1,0 +1,79 @@
+import styled from "styled-components";
+import Navbar from "../components/Navbar";
+
+import { Footer } from "../components/Footer";
+import { mobile } from "../responsive";
+import { useParams } from "react-router-dom";
+import { useState } from "react";
+import ProductList from "../components/ProductList";
+
+const CategoryList = () => {
+  const { category } = useParams();
+  const [filters, setFilters] = useState("");
+  const [sort, setSort] = useState("all");
+
+  return (
+    <Container>
+      <Navbar />
+
+      <Title>{category}</Title>
+      <FilterContainer>
+        <Filter>
+          <FilterText>Filter Products:</FilterText>
+          <Select
+            name="newness"
+            onChange={(event) => setFilters(event.target.value)}
+          >
+            <Option value="latest">Latest</Option>
+            <Option value="oldest">Oldest</Option>
+          </Select>
+        </Filter>
+        <Filter>
+          <FilterText>Sort Products:</FilterText>
+          <Select onChange={(event) => setSort(event.target.value)}>
+            <Option value={"all"}>All</Option>
+            <Option value={"asc"}>Price (asc)</Option>
+            <Option value={"desc"}>Price (desc)</Option>
+          </Select>
+        </Filter>
+      </FilterContainer>
+      <ProductList category={category} filters={filters} sort={sort} />
+      <Footer />
+    </Container>
+  );
+};
+
+export default CategoryList;
+
+const Container = styled.div`
+  color: #1e144f;
+`;
+
+const Title = styled.h1`
+  margin: 20px;
+`;
+
+const FilterContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Filter = styled.div`
+  margin: 20px;
+  ${mobile({ margin: "0 20px", display: "flex", flexDirection: "column" })};
+`;
+
+const FilterText = styled.span`
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 20px;
+  ${mobile({ marginRight: "0px" })};
+`;
+
+const Select = styled.select`
+  padding: 10px;
+  margin-right: 20px;
+  ${mobile({ margin: "10px 0" })};
+`;
+
+const Option = styled.option``;
