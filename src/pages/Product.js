@@ -64,7 +64,7 @@ export const Product = () => {
   return (
     <Container>
       <Navbar />
-      <Announcement />
+
       <Wrapper>
         <ImageContainer>
           <Image src={product.image} alt="productImage" />

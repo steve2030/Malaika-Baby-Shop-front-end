@@ -26,8 +26,8 @@ const Login = () => {
       <Left>
         <LeftWrapper>
           <Logo>
-            med<FirstSpan>ic</FirstSpan>
-            <SecondSpan>ine</SecondSpan>
+            Malaika<FirstSpan>Baby</FirstSpan>
+            <SecondSpan>Shop</SecondSpan>
           </Logo>
           <Text>A few clicks aways from creating your Account</Text>
         </LeftWrapper>
@@ -59,12 +59,12 @@ const Login = () => {
             />
 
             <Button disabled={isFetching}>LOGIN</Button>
-            {error && <Error>Something went wrong</Error>}
+            {/* {error && <Error>Something went wrong</Error>} */}
           </Form>
           <Register>
             Don't have an account yet?
             <Link to="/register">
-              <Span>Join medicine</Span>
+              <Span>Join Malaika</Span>
             </Link>
           </Register>
         </Wrapper>
