@@ -39,13 +39,13 @@ const Home = () => {
         sliderItems={sliderItems}
         category={baby}
         type="baby"
-        title="Shop common medications"
+        title="Shop common Baby Produts"
       />
       <ProductCarousel
         sliderItems={sliderItems}
         category={women}
         type="women"
-        title="New on medicine"
+        title="New Products"
       />
       <CategoryTitle />
       <ProductList input={input} />

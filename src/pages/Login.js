@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { login } from "../redux/apiCalls";
-
+import { NavLink } from "react-router-dom";
 const Login = () => {
   const [inputs, setInputs] = useState({
     username: "",
@@ -25,10 +25,15 @@ const Login = () => {
     <Container>
       <Left>
         <LeftWrapper>
-          <Logo>
+
+          <NavLink to="/">
+            <Logo>
             Malaika<FirstSpan>Baby</FirstSpan>
-            <SecondSpan>Shop</SecondSpan>
-          </Logo>
+              <SecondSpan>Shop</SecondSpan>
+            </Logo>
+          </NavLink>
+
+
           <Text>A few clicks aways from creating your Account</Text>
         </LeftWrapper>
       </Left>
