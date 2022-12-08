@@ -3,9 +3,10 @@
 - [Description](#description)
 - [Features](#features)
 - [Development](#development)
-- [Live Link](#live-link)
+- [Live Link](#https://steve2030.github.io/Malaika-Baby-Shop-front-end/)
 - [Setup Instructions and Technology](#technology-used)
 - [License](#license)
+-
 
 ## Description
 
