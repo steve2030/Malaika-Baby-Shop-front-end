@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/static/js/main.4a450591.js",
+    "static/media/baby.jpg": "/static/media/baby.d43e4d26e97481be96d5.jpg",
+    "static/media/medication.png": "/static/media/medication.3aaabc91d3b2caedccac.png",
+    "index.html": "/index.html",
+    "main.4a450591.js.map": "/static/js/main.4a450591.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4a450591.js"
+  ]
+}
