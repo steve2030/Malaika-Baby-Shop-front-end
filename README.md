@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+## Table of Content
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Description](#description)
+- [Features](#features)
+- [Development](#development)
+- [Live Link](#live-link)
+- [Setup Instructions and Technology](#technology-used)
+- [License](#license)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+---
 
-### `npm start`
+Malaika Baby Store is an online pharmacy web application meant to be help patients find theirbaby products with ease. The client can browse and see any product when they land on the page, they can choose products by category, they can select a product and be redirected to a single page where they can read more about it. In the single page they can also read reviews about the product from other usersand also be able to leave of their own about the product.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+the site has both the client side and the admin dashboard. The clients who are not registered can view the product and add product to cart but they need authentication to checkout. To get athentication a user has to register if they dont have an account then register or if they have an account they can login and they will be issued with an access token that will allow them to leave a review on a product or checkout the cart.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+_admin_ has all the authority to visit any part of the site plus they can visit the admin dashboard. In the dashboard they can create, delete, update, fetch all the products. 
+This is a _medicine_ website with a front-end made using React and a backend made with Ruby and Rails, and Postgresql. Rails and Postgress allowed us to create five models, _User_, _Product_, _Order_, _Cart_ and _Review_ that could communicate with the database. In each model if where we defined our macro associations.
 
-### `npm test`
+Rails helped in creating api endpoints that could be used by React frontend to get, post, delete and update the products and its associates.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A user visiting this page would be able to see:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. A home page populated with products from different manufacturers.
 
-### `npm run eject`
+2. A top navigation section with links to register or login for a new user and a link to cart if they want to see what is in their cart and checkout.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. A user can select an product by clicking on the cards and this will enable to read more about the product in a single separate page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. For an authenticated user they can visit the single event page and they are provided with tools to post, review in any any product they are interested in.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. An authorized user can checkout their cart in the in cart page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Admin can get access to the admin dashboard where they can see all the products and also delete, update and create new products.
 
-## Learn More
+7. Admin can also see the orders and users registered in the website and also add users or delete them.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Technology Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+- Used Visual Studio Code editor to create the front-end with _**React**_ and backend with _**Rails**_, _**Postgresql**_
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Styled-components** - framework was used to add styling of the website.
 
-### Analyzing the Bundle Size
+- **Material-UI** - framework was used to add basic tables and data tables in the admin dashboard to display the products, users and orders. As well as adding icons in the website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Redux** - was used to fetch products from server and to help persist a logged in user, products and cart across all pages in the website and enable them with accessibility privilages.
 
-### Making a Progressive Web App
+- **React** - help in creating interactive website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React-circular-progressbar** - help in creating interactive progressbar in the admin dashboard.
 
-### Advanced Configuration
+- _**Rails**_, _**Postgresql**_ helped in creating the database, the models, controllers, actions and the api endpoints to use in the client side.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Instructions
 
-### Deployment
+### To have the admin privileges then you have to do the following.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- If you are in the landing page and you are logged in the click on the signin buttton and that will take you to the login page.
+- If you are already signed in as a different user then signout the click on the signin button.
+- Enter **admin** as username and **123456** as the password and this will take you to the landing page.
+- You'll see a button labeled dashboard which you can click and this will send you to the admin dashboard.
+- While here you'll have access to the sidebar where you can view users and products.
+- Click on products and this will take you to a page with all the products filtered in 5 per page.
+- If you click on the **View** button on any product this will take you to a single page where you see more details about the product. It also provides you with a form where you can update the product.
+- In the procucts page at the top right corner there is a **Add New** button that will take you to a new page where you can create a new product.
+- Also in the products page you can delete a product by clicking the **Delete** button.
+- Clicking in the logo will take you back to the landing page.
 
-### `npm run build` fails to minify
+### To have the user privileges then you have to do the following.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- In the landing page click the signin button at the navbar or the signup button in the filter component section.
+- This will take you to **register** page where you can enter your details.
+- After successfully login then you can click the profile avatar at navbar and this will take you to **settings** page where you can enter your profile details including image, address and phone number.
+- A user has privilege to leave a review in single product.
+
+## Development
+
+---
+
+Want to contribute? Excellent!
+
+To enhance or contribute on the existing project, follow these steps:
+
+- Fork the repo
+- Run npm install in the client repository and bundle install in the backend repository to download the dependencies.
+- Create a new branch (git checkout -b enhance-feature)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (git commit -m 'Enhanced feature')
+- Push to the branch (git push origin enhance-feature)
+- Create a Pull Request
+
+### Live Link
+
+---
+
+\- Click this link to see the live website ()
+
+## License
+
+---
+
+MIT License
+
+Copyright (c) [2022] [Stephen munyao wambua]

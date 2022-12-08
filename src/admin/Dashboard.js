@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Chart from "../components/Chart";
+
 import DashboardNavbar from "../components/DashboardNavbar";
-import Featured from "../components/Featured";
+
 import Sidebar from "../components/Sidebar";
-import Table from "../components/Table";
-import Widget from "../components/Widget";
+
 
 const Dashboard = () => {
   return (

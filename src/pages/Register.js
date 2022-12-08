@@ -34,10 +34,12 @@ const Register = () => {
     <Container>
       <Left>
         <LeftWrapper>
-          <Logo>
+        <NavLink to="/">
+            <Logo>
             Malaika<FirstSpan>Baby</FirstSpan>
-            <SecondSpan>Shop</SecondSpan>
-          </Logo>
+              <SecondSpan>Shop</SecondSpan>
+            </Logo>
+          </NavLink>
           <Text>A few clicks aways from creating your Account</Text>
         </LeftWrapper>
       </Left>

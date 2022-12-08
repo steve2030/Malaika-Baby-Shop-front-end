@@ -44,7 +44,7 @@ const Home = () => {
       <ProductCarousel
         sliderItems={sliderItems}
         category={women}
-        type="women"
+        type="woman"
         title="New Products"
       />
       <CategoryTitle />

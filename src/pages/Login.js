@@ -64,7 +64,7 @@ const Login = () => {
             />
 
             <Button disabled={isFetching}>LOGIN</Button>
-            {/* {error && <Error>Something went wrong</Error>} */}
+            {error && <Error>Something went wrong</Error>}
           </Form>
           <Register>
             Don't have an account yet?
