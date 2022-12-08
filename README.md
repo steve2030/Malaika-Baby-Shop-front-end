@@ -3,7 +3,7 @@
 - [Description](#description)
 - [Features](#features)
 - [Development](#development)
-- [Live Link](#https://steve2030.github.io/Malaika-Baby-Shop-front-end/)
+- [Live Link](#link)
 - [Setup Instructions and Technology](#technology-used)
 - [License](#license)
 -
@@ -99,7 +99,7 @@ To enhance or contribute on the existing project, follow these steps:
 - Push to the branch (git push origin enhance-feature)
 - Create a Pull Request
 
-### Live Link
+### Live Link https://steve2030.github.io/Malaika-Baby-Shop-front-end/
 
 ---
 
