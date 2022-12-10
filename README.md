@@ -10,7 +10,7 @@
 - [Live Link](#link)
 - [Setup Instructions and Technology](#technology-used)
 - [License](#license)
--[Back-end  Link](#link)
+
 
 ## Description
 
