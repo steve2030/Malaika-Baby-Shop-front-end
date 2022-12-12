@@ -12,22 +12,21 @@ const Filter = () => {
             <DropDownHeader>Categories</DropDownHeader>
             <DropDownList>
               <Link to="/products/baby">
-                <ListItems>Baby Care</ListItems>
+                <ListItems>Baby Apparels</ListItems>
               </Link>
               <Link to="/products/women">
-                <ListItems>Women</ListItems>
+                <ListItems>Food Stuffs</ListItems>
               </Link>
               <Link to="/products/skin care">
-                <ListItems>Skin Care</ListItems>
+                <ListItems>Devices</ListItems>
               </Link>
               <Link to="/products/cough">
-                <ListItems>Cough Medication</ListItems>
+                <ListItems>Medication</ListItems>
               </Link>
               <Link to="/products/disinfectant">
-                <ListItems>Disinfectant</ListItems>
+                <ListItems>foods</ListItems>
               </Link>
-              <ListItems>Family Care</ListItems>
-              <ListItems>Fitness</ListItems>
+
             </DropDownList>
           </DropDownContainer>
           <MenuItems>
