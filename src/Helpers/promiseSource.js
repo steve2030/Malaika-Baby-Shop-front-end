@@ -11,19 +11,19 @@ export const ourPromise = [
   {
     id: 2,
     icon: <AddCard fontSize="large" />,
-    title: "Works with insurance",
-    description: "You'll see medication prices based on your plan",
+    title: "Durable products",
+    description: "All our products are long lasting giving you the best quality service ever",
   },
   {
     id: 3,
     icon: <VerifiedUser fontSize="large" />,
-    title: "Trusted security",
-    description: "Your medical information is always protected",
+    title: "Wrranty Guranteed",
+    description: "We offer you a one year warrant for all our goods",
   },
   {
     id: 4,
     icon: <SupportAgent fontSize="large" />,
     title: "24/7 support",
-    description: "You can always speak to a pharmacist",
+    description: "You can always speak to us at any time",
   },
 ];
